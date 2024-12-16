@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 70px;
+
+  .logo {
+    a {
+      font-size: 25px;
+      font-weight: bolder;
+      color: #4d5dec;
+    }
+  }
+
+  .searchbx {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+
+    input {
+      width: 100%;
+      width: 350px;
+      border: 1px solid #868181;
+      font-size: 15px;
+      padding: 0px 10px;
+      outline: none;
+    }
+
+    i {
+      font-size: 25px;
+      background: #4d5dec86;
+      padding: 6px;
+    }
+  }
+
+  .menus {
+    i {
+      font-size: 30px;
+    }
+  }
+}
+
+.container {
+  width: 100vw;
+  height: 88vh;
+  display: flex;
+
+  .left-sidebar {
+    width: 18vw;
+    height: 88vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .add {
+      background: #dad5d58e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0px;
+      max-width: 130px;
+      padding: 10px 10px;
+      border-radius: 10px;
+      margin-top: 10px;
+
+      h4 {
+        font-size: 15px;
+        font-weight: 700;
+        color: #2e2525;
+      }
+
+      i {
+        font-size: 40px;
+        color: #4d5dec;
+      }
+    }
+
+    .options {
+      display: flex;
+      flex-direction: row;
+      min-width: 130px;
+      gap: 15px;
+      padding: 8px 10px;
+
+      i {
+        font-size: 20px;
+        color: #555454;
+      }
+
+      h4 {
+        font-size: 15px;
+        color: #555454;
+        font-weight: 700;
+      }
+    }
+
+    .imgbx {
+      width: 230px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .btn {
+      width: 120px;
+      margin-top: -30px;
+
+      button {
+        padding: 10px 16px;
+        background: #4d5dec;
+        border-radius: 8px;
+        border: none;
+        color: #ffff;
+      }
+    }
+  }
+
+  .right-sidebar {
+    width: 82vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .banner-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+
+      .banner {
+        background: #4d5dec52;
+        width: 45vw;
+        max-height: 20vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px 22px;
+        margin: 20px 0px 0px 10px;
+        border-radius: 10px;
+
+        .contentbx {
+          h4 {
+            font-size: 17px;
+            color: #2e2525;
+            font-weight: 700;
+            margin-bottom: 10px;
+          }
+
+          p {
+            font-size: 15px;
+            color: #555454;
+            font-weight: 500;
+          }
+        }
+
+        .imgbx {
+          width: 250px;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .progress {
+        width: 32vw;
+        background: #4deca263;
+        max-height: 20vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 15px 22px;
+        margin: 20px 0px 0px 10px;
+        border-radius: 10px;
+      }
+    }
+
+    .notebx {
+      width: 81vw;
+      height: 64vh;
+
+      .cardbx {
+        display: flex;
+        padding: 10px 10px;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .card {
+          position: relative;
+
+          textarea {
+            min-width: 260px;
+            min-height: 220px;
+            font-size: 15px;
+            padding: 10px;
+            border-radius: 10px;
+            outline: none;
+            background: #adadad57;
+            border: none;
+            color: #2e2525;
+          }
+
+          #delete{
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+            font-size: 20px;
+            color: #555454;
+          }
+
+          #edit{
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 20px;
+            color: #555454;
+          }
+        }
+      }
+    }
+  }
+}

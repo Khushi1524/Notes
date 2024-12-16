@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 70px;
+}
+.navbar .logo a {
+  font-size: 25px;
+  font-weight: bolder;
+  color: #4d5dec;
+}
+.navbar .searchbx {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+}
+.navbar .searchbx input {
+  width: 100%;
+  width: 350px;
+  border: 1px solid #868181;
+  font-size: 15px;
+  padding: 0px 10px;
+  outline: none;
+}
+.navbar .searchbx i {
+  font-size: 25px;
+  background: rgba(77, 93, 236, 0.5254901961);
+  padding: 6px;
+}
+.navbar .menus i {
+  font-size: 30px;
+}
+
+.container {
+  width: 100vw;
+  height: 88vh;
+  display: flex;
+}
+.container .left-sidebar {
+  width: 18vw;
+  height: 88vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.container .left-sidebar .add {
+  background: rgba(218, 213, 213, 0.5568627451);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  max-width: 130px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.container .left-sidebar .add h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #2e2525;
+}
+.container .left-sidebar .add i {
+  font-size: 40px;
+  color: #4d5dec;
+}
+.container .left-sidebar .options {
+  display: flex;
+  flex-direction: row;
+  min-width: 130px;
+  gap: 15px;
+  padding: 8px 10px;
+}
+.container .left-sidebar .options i {
+  font-size: 20px;
+  color: #555454;
+}
+.container .left-sidebar .options h4 {
+  font-size: 15px;
+  color: #555454;
+  font-weight: 700;
+}
+.container .left-sidebar .imgbx {
+  width: 230px;
+}
+.container .left-sidebar .imgbx img {
+  width: 100%;
+}
+.container .left-sidebar .btn {
+  width: 120px;
+  margin-top: -30px;
+}
+.container .left-sidebar .btn button {
+  padding: 10px 16px;
+  background: #4d5dec;
+  border-radius: 8px;
+  border: none;
+  color: white;
+}
+.container .right-sidebar {
+  width: 82vw;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .right-sidebar .banner-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.container .right-sidebar .banner-content .banner {
+  background: rgba(77, 93, 236, 0.3215686275);
+  width: 45vw;
+  max-height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 22px;
+  margin: 20px 0px 0px 10px;
+  border-radius: 10px;
+}
+.container .right-sidebar .banner-content .banner .contentbx h4 {
+  font-size: 17px;
+  color: #2e2525;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.container .right-sidebar .banner-content .banner .contentbx p {
+  font-size: 15px;
+  color: #555454;
+  font-weight: 500;
+}
+.container .right-sidebar .banner-content .banner .imgbx {
+  width: 250px;
+}
+.container .right-sidebar .banner-content .banner .imgbx img {
+  width: 100%;
+}
+.container .right-sidebar .banner-content .progress {
+  width: 32vw;
+  background: rgba(77, 236, 162, 0.3882352941);
+  max-height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px 22px;
+  margin: 20px 0px 0px 10px;
+  border-radius: 10px;
+}
+.container .right-sidebar .notebx {
+  width: 81vw;
+  height: 64vh;
+}
+.container .right-sidebar .notebx .cardbx {
+  display: flex;
+  padding: 10px 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container .right-sidebar .notebx .cardbx .card {
+  position: relative;
+}
+.container .right-sidebar .notebx .cardbx .card textarea {
+  min-width: 260px;
+  min-height: 220px;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(173, 173, 173, 0.3411764706);
+  border: none;
+  color: #2e2525;
+}
+.container .right-sidebar .notebx .cardbx .card #delete {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 20px;
+  color: #555454;
+}
+.container .right-sidebar .notebx .cardbx .card #edit {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 20px;
+  color: #555454;
+}/*# sourceMappingURL=style.css.map */
