@@ -8,18 +8,18 @@
   font-family: "Playfair Display", sans-serif;
 }
 
-:root{
-  --primary-color : #fff;
-  --secondary-color :#2e2525;
+:root {
+  --primary-color: #fff;
+  --secondary-color: #2e2525;
   --tertiary-color: #555454;
-  --add-bg :#dad5d58e;
+  --add-bg: #dad5d58e;
 }
 
-.dark-theme{
-  --primary-color : #000106;
-  --secondary-color : #ebe8e8;
+.dark-theme {
+  --primary-color: #000106;
+  --secondary-color: #ebe8e8;
   --tertiary-color: #a3a1a1;
-  --add-bg :#ffffffbb;
+  --add-bg: #ffffffbb;
 }
 
 body::-webkit-scrollbar {
@@ -99,7 +99,7 @@ body::-webkit-scrollbar {
       padding: 25px;
 
       .add {
-        background:var(--add-bg);
+        background: var(--add-bg);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -112,7 +112,7 @@ body::-webkit-scrollbar {
         h4 {
           font-size: 15px;
           font-weight: 700;
-          color:2e2525;
+          color: 2e2525;
         }
 
         i {
@@ -136,7 +136,7 @@ body::-webkit-scrollbar {
 
         h4 {
           font-size: 15px;
-          color:  var(--tertiary-color);
+          color: var(--tertiary-color);
           font-weight: 700;
         }
       }
@@ -200,7 +200,7 @@ body::-webkit-scrollbar {
 
             p {
               font-size: 15px;
-              color:  var(--tertiary-color);
+              color: var(--tertiary-color);
               font-weight: 500;
             }
           }
@@ -343,6 +343,48 @@ body::-webkit-scrollbar {
         a {
           color: #4d5dec;
           font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .calendar {
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .calendar-container {
+      max-width: 350px;
+      padding: 10px;
+      background: #fff;
+      border-radius: 10px;
+
+      .calendar-heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        h4 {
+          text-align: center;
+          font-size: 20px;
+        }
+       
+      }
+
+      .calendar-section {
+        ul {
+          list-style: none;
+          display: flex;
+          flex-wrap: wrap;
+          text-align: center;
+
+          li {
+            width: calc(100% / 7);
+            margin-top: 25px;
+            position: relative;
+            z-index: 2;
+          }
         }
       }
     }
