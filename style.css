@@ -7,12 +7,27 @@
   font-family: "Playfair Display", sans-serif;
 }
 
+:root {
+  --primary-color: #fff;
+  --secondary-color:#2e2525;
+  --tertiary-color: #555454;
+  --add-bg:#dad5d58e;
+}
+
+.dark-theme {
+  --primary-color: #000106;
+  --secondary-color: #ebe8e8;
+  --tertiary-color: #a3a1a1;
+  --add-bg:#ffffffbb;
+}
+
 body::-webkit-scrollbar {
   display: none;
 }
 
 .main-container {
   position: relative;
+  background-color: var(--primary-color);
 }
 .main-container .navbar {
   display: flex;
@@ -70,7 +85,7 @@ body::-webkit-scrollbar {
   padding: 25px;
 }
 .main-container .container .left-sidebar .add {
-  background: rgba(218, 213, 213, 0.5568627451);
+  background: var(--add-bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,7 +98,7 @@ body::-webkit-scrollbar {
 .main-container .container .left-sidebar .add h4 {
   font-size: 15px;
   font-weight: 700;
-  color: #2e2525;
+  color: calc(infinity);
 }
 .main-container .container .left-sidebar .add i {
   font-size: 40px;
@@ -99,11 +114,11 @@ body::-webkit-scrollbar {
 }
 .main-container .container .left-sidebar .options i {
   font-size: 20px;
-  color: #555454;
+  color: var(--tertiary-color);
 }
 .main-container .container .left-sidebar .options h4 {
   font-size: 15px;
-  color: #555454;
+  color: var(--tertiary-color);
   font-weight: 700;
 }
 .main-container .container .left-sidebar .imgbx {
@@ -152,13 +167,13 @@ body::-webkit-scrollbar {
 }
 .main-container .container .right-sidebar .banner-content .banner .contentbx h4 {
   font-size: 17px;
-  color: #2e2525;
+  color: var(--secondary-color);
   font-weight: 700;
   margin-bottom: 10px;
 }
 .main-container .container .right-sidebar .banner-content .banner .contentbx p {
   font-size: 15px;
-  color: #555454;
+  color: var(--tertiary-color);
   font-weight: 500;
 }
 .main-container .container .right-sidebar .banner-content .banner .imgbx {

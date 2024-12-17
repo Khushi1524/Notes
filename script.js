@@ -35,11 +35,17 @@ addnote.addEventListener("click", (event) => {
   });
 });
 
-// const mode = document.querySelector('#mode')
-// const body = document.querySelector('body')
-// mode.addEventListener('click',(event)=>{
-//     body.style.backgroundColor = "black";
-// })
+const mode = document.querySelector('#mode')
+const body = document.querySelector('body')
+const moon = document.querySelector('#moon')
+mode.addEventListener('click',(event)=>{
+   document.body.classList.toggle("dark-theme");
+  if(body.classList.contains("dark-theme")){
+    mode.innerHTML = '<i class="fa-solid fa-sun"></i><h4>Light Mode<h4/>'
+  }else{
+    mode.innerHTML = '<i class="fa fa-moon"></i><h4>Dark Mode<h4/>'
+  }
+})
 
 //signup
 
