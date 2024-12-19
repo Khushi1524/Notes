@@ -12,28 +12,45 @@ function updateStorage() {
   localStorage.setItem("notes", noteContainer.innerHTML);
 }
 
-addnote.addEventListener("click", (event) => {
-  const newCard = document.createElement("div");
-  newCard.classList.add("card");
+//Notes options hide and show
 
-  newCard.innerHTML = `
-        <textarea name="" id=""></textarea>
-        <i id="delete" class="fa-solid fa-trash"></i>
-        <i id="edit" class="fa-solid fa-pen-to-square"></i>
-    `;
+const noteOptions = document.querySelector('#note-options')
+addnote.addEventListener("click",(e)=>{
+  noteOptions.style.display = 'flex'
+})
+document.addEventListener('click',(e)=>{
+  if(!addnote.contains(e.target)){
+   noteOptions.style.display = 'none'
+  }
+})
 
-  noteContainer.appendChild(newCard);
-  updateStorage();
+//note cards functionality
 
-  newCard.querySelector("#delete").addEventListener("click", () => {
-    newCard.remove();
-    updateStorage();
-  });
+// addnote.addEventListener("click", (event) => {
+//   const newCard = document.createElement("div");
+//   newCard.classList.add("card");
 
-  newCard.querySelector("textarea").addEventListener("input", () => {
-    updateStorage();
-  });
-});
+//   newCard.innerHTML = `
+//         <textarea name="" id=""></textarea>
+//         <i id="delete" class="fa-solid fa-trash"></i>
+//         <i id="edit" class="fa-solid fa-pen-to-square"></i>
+//     `;
+
+//   noteContainer.appendChild(newCard);
+//   updateStorage();
+
+//   newCard.querySelector("#delete").addEventListener("click", () => {
+//     newCard.remove();
+//     updateStorage();
+//   });
+
+//   newCard.querySelector("textarea").addEventListener("input", () => {
+//     updateStorage();
+//   });
+// });
+
+
+//dark-light mode
 
 const mode = document.querySelector('#mode')
 const body = document.querySelector('body')
@@ -41,9 +58,9 @@ const moon = document.querySelector('#moon')
 mode.addEventListener('click',(event)=>{
    document.body.classList.toggle("dark-theme");
   if(body.classList.contains("dark-theme")){
-    mode.innerHTML = '<i class="fa-solid fa-sun"></i><h4>Light Mode<h4/>'
+    mode.innerHTML = '<i style="color:#fff" class="fa-solid fa-sun"></i><h4>'
   }else{
-    mode.innerHTML = '<i class="fa fa-moon"></i><h4>Dark Mode<h4/>'
+    mode.innerHTML = '<i class="fa fa-moon"></i>'
   }
 })
 

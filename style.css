@@ -57,10 +57,16 @@ body::-webkit-scrollbar {
   background: rgba(77, 93, 236, 0.5254901961);
   padding: 6px;
 }
-.main-container .navbar .menus i {
+.main-container .navbar .authentication {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+.main-container .navbar .authentication #mode i {
   font-size: 30px;
 }
-.main-container .navbar .signup button {
+.main-container .navbar .authentication button {
   padding: 8px 20px;
   color: white;
   font-size: 15px;
@@ -94,6 +100,27 @@ body::-webkit-scrollbar {
   padding: 10px 10px;
   border-radius: 10px;
   cursor: pointer;
+}
+.main-container .container .left-sidebar .add .create-note-options {
+  position: absolute;
+  background: #868181;
+  color: white;
+  top: 135px;
+  left: 100px;
+  z-index: 10;
+  padding: 10px 20px;
+  font-size: 15px;
+  display: none;
+}
+.main-container .container .left-sidebar .add .create-note-options ul {
+  list-style: none;
+}
+.main-container .container .left-sidebar .add .create-note-options ul li {
+  padding: 7px;
+}
+.main-container .container .left-sidebar .add .create-note-options ul li:hover {
+  background: #fff;
+  color: #000106;
 }
 .main-container .container .left-sidebar .add h4 {
   font-size: 15px;
@@ -297,37 +324,4 @@ body::-webkit-scrollbar {
 .main-container .signupContainer form p a {
   color: #4d5dec;
   font-weight: 700;
-}
-.main-container .calendar {
-  background: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main-container .calendar .calendar-container {
-  max-width: 350px;
-  padding: 10px;
-  background: #fff;
-  border-radius: 10px;
-}
-.main-container .calendar .calendar-container .calendar-heading {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.main-container .calendar .calendar-container .calendar-heading h4 {
-  text-align: center;
-  font-size: 20px;
-}
-.main-container .calendar .calendar-container .calendar-section ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-}
-.main-container .calendar .calendar-container .calendar-section ul li {
-  width: 14.2857142857%;
-  margin-top: 25px;
-  position: relative;
-  z-index: 2;
 }/*# sourceMappingURL=style.css.map */

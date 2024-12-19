@@ -64,13 +64,21 @@ body::-webkit-scrollbar {
       }
     }
 
-    .menus {
+
+
+    .authentication {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+
+        #mode {
       i {
         font-size: 30px;
+
       }
     }
 
-    .signup {
       button {
         padding: 8px 20px;
         color: #ffff;
@@ -108,6 +116,31 @@ body::-webkit-scrollbar {
         padding: 10px 10px;
         border-radius: 10px;
         cursor: pointer;
+
+        .create-note-options{
+          position: absolute;
+          background: #868181;
+          color: #ffff;
+          top: 135px;
+          left: 100px;
+          z-index: 10;
+          padding: 10px 20px;
+          font-size: 15px;
+          display: none;
+
+          ul{
+            list-style: none;
+
+            li{
+              padding: 7px;
+            }
+
+            li:hover{
+              background:#fff;
+              color: #000106;
+            }
+          }
+        }
 
         h4 {
           font-size: 15px;
@@ -348,45 +381,45 @@ body::-webkit-scrollbar {
     }
   }
 
-  .calendar {
-    background: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  // .calendar {
+  //   background: red;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
 
-    .calendar-container {
-      max-width: 350px;
-      padding: 10px;
-      background: #fff;
-      border-radius: 10px;
+  //   .calendar-container {
+  //     max-width: 350px;
+  //     padding: 10px;
+  //     background: #fff;
+  //     border-radius: 10px;
 
-      .calendar-heading {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+  //     .calendar-heading {
+  //       display: flex;
+  //       flex-direction: row;
+  //       justify-content: space-between;
 
-        h4 {
-          text-align: center;
-          font-size: 20px;
-        }
+  //       h4 {
+  //         text-align: center;
+  //         font-size: 20px;
+  //       }
        
-      }
+  //     }
 
-      .calendar-section {
-        ul {
-          list-style: none;
-          display: flex;
-          flex-wrap: wrap;
-          text-align: center;
+  //     .calendar-section {
+  //       ul {
+  //         list-style: none;
+  //         display: flex;
+  //         flex-wrap: wrap;
+  //         text-align: center;
 
-          li {
-            width: calc(100% / 7);
-            margin-top: 25px;
-            position: relative;
-            z-index: 2;
-          }
-        }
-      }
-    }
-  }
+  //         li {
+  //           width: calc(100% / 7);
+  //           margin-top: 25px;
+  //           position: relative;
+  //           z-index: 2;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
